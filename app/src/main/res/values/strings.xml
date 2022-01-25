@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PavlovREST</string>
+    <string name="resultName">Результат</string>
+    <string name="calculateName">Рассчитать</string>
+    <string name="resultAmpereName">Расчётный ток (А)</string>
+    <string name="powerName">Мощность подключаемого устройства (Вт)</string>
+    <string name="voltageName">Напряжение подключаемого устройства (В)</string>
+    <string name="voltageWName">Напряжение сети (В)</string>
+    <string name="requiredCoreAreaName">Требуемая площадь сердечника (cм2):</string>
+    <string name="primaryWindingName">Первичная обмотка</string>
+    <string name="secondaryWindingName">Вторичная обмотка</string>
+    <string name="requiredNumberOfTurnsName">Требуемое количество витков (шт)</string>
+    <string name="diameterWiresName">Диаметр провода (мм)</string>
+    <string-array name="VoltsArray">
+    <item>120</item>
+    <item>210</item>
+    <item>220</item>
+    <item>230</item>
+</string-array>
+
+</resources>
