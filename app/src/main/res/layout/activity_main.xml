@@ -20,4 +20,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/reactiveResistanceBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="46dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/reactiveResistanceBtnText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transformatorBtn"
+        tools:text="@string/reactiveResistanceBtnText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

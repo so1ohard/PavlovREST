@@ -47,7 +47,15 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
         Button trBtn = (Button)findViewById(R.id.transformatorBtn);
+        Button reactResistInd = (Button)findViewById(R.id.reactiveResistanceBtn);
 
+        reactResistInd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ReactiveResistanceInductionActivity.class);
+                startActivity(intent);
+            }
+        });
         trBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,22 +66,7 @@ public class MainActivity extends AppCompatActivity {
 //                } else {
 //                    System.out.println("no");
 //                }
-                NetworkService.getInstance()
-                        .getJsonApi()
-                        .getReactResistInd(10,10)
-                        .enqueue(new Callback<Post>() {
-                            @Override
-                            public void onResponse(Call<Post> call, Response<Post> response) {
-                                Post post = response.body();
-                                System.out.println("success");
-                            }
 
-                            @Override
-                            public void onFailure(Call<Post> call, Throwable t) {
-                                System.out.println("error");
-                                t.printStackTrace();
-                            }
-                        });
             }
         });
 

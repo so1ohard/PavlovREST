@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PavlovREST</string>
+    <string name="app_name">Электротехнический калькулятор</string>
     <string name="resultName">Результат</string>
     <string name="calculateName">Рассчитать</string>
     <string name="resultAmpereName">Расчётный ток (А)</string>
@@ -11,11 +11,26 @@
     <string name="secondaryWindingName">Вторичная обмотка</string>
     <string name="requiredNumberOfTurnsName">Требуемое количество витков (шт)</string>
     <string name="diameterWiresName">Диаметр провода (мм)</string>
+    <string name="frequencyName">Частота</string>
+    <string name="inductionName">Индуктивность</string>
+    <string name="resistanceUnits">Единицы сопротивления</string>
+    <string name="reactiveResistanceBtnText">Расчёт реактивного сопротивления катушки индуктивности</string>
     <string-array name="VoltsArray">
     <item>120</item>
     <item>210</item>
     <item>220</item>
     <item>230</item>
 </string-array>
+    <string name="title_activity_reactive_resistance_induction">
+        ReactiveResistanceInductionActivity
+    </string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>
