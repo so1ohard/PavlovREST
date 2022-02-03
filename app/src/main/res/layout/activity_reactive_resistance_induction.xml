@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/powerText2"
-        android:layout_width="160dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="580dp"
@@ -29,9 +29,9 @@
 
     <TextView
         android:id="@+id/powerText3"
-        android:layout_width="160dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:autoText="false"
@@ -47,25 +47,29 @@
 
     <EditText
         android:id="@+id/frequencyNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="121dp"
         android:layout_height="50dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/freqSpinner"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/inductionsNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="121dp"
         android:layout_height="50dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/indSpinner"
         app:layout_constraintTop_toBottomOf="@+id/frequencyNumber"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -74,18 +78,69 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="139dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="139dp"
         android:text="@string/calculateName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="147dp"
+        app:layout_constraintTop_toBottomOf="@+id/ResultText"
         tools:text="@string/calculateName" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="196dp" />
+        android:id="@+id/ResultText"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/resultName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerText3"
+        tools:text="@string/resultName" />
+
+    <EditText
+        android:id="@+id/resultField"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resistSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/inductionsNumber"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/freqSpinner"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/freqArray"
+        app:layout_constraintStart_toEndOf="@+id/powerText2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/indSpinner"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/indArray"
+        app:layout_constraintStart_toEndOf="@+id/powerText3"
+        app:layout_constraintTop_toBottomOf="@+id/freqSpinner" />
+
+    <Spinner
+        android:id="@+id/resistSpinner"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/resistanceArray"
+        app:layout_constraintStart_toEndOf="@+id/ResultText"
+        app:layout_constraintTop_toBottomOf="@+id/indSpinner" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

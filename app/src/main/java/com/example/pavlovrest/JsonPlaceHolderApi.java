@@ -9,5 +9,5 @@ import retrofit2.http.Query;
 
 public interface JsonPlaceHolderApi {
     @GET("/reactResistInd")
-     Call<Post> getReactResistInd(@Query("freq") int freq, @Query("ind") int ind);
+     Call<Post> getReactResistInd(@Query("freq") int freq, @Query("freqMul") int fMul, @Query("ind") int ind, @Query("indMul") int iMul);
 }

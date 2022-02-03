@@ -20,7 +20,22 @@
     <item>210</item>
     <item>220</item>
     <item>230</item>
-</string-array>
+    </string-array>
+    <string-array name="freqArray">
+        <item>Гц</item>
+        <item>КГц</item>
+        <item>МГц</item>
+    </string-array>
+    <string-array name="indArray">
+        <item>Гн</item>
+        <item>мГн</item>
+        <item>мкГн</item>
+    </string-array>
+    <string-array name="resistanceArray">
+        <item>Ом</item>
+        <item>КОм</item>
+        <item>МОм</item>
+    </string-array>
     <string name="title_activity_reactive_resistance_induction">
         ReactiveResistanceInductionActivity
     </string>

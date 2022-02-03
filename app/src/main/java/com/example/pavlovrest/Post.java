@@ -6,13 +6,13 @@ import com.google.gson.annotations.SerializedName;
 public class Post {
     @SerializedName("value")
     @Expose
-    private double value;
+    private String value;
 
-    public double getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(double value) {
+    public void setValue(String value) {
         this.value = value;
     }
 }
