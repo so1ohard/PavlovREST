@@ -11,10 +11,7 @@ public class TransformatorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //restletClient.handle();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.transformator);
-
-
     }
 }

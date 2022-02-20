@@ -6,7 +6,8 @@
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2046875" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2046875" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/layout/activity_reactive_resistance_induction.xml" value="0.5" />
+        <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/layout/activity_reactive_resistance_capacitor.xml" value="1.0" />
+        <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/layout/activity_reactive_resistance_induction.xml" value="0.33" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/layout/fragment_first.xml" value="0.33" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/layout/fragment_second.xml" value="0.1" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/PavlovREST/app/src/main/res/layout/transformator.xml" value="0.5" />

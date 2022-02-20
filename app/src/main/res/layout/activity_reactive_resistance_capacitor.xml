@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReactiveResistanceCapacitor">
+
+    <Button
+        android:id="@+id/calculateResistanceCapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="139dp"
+        android:text="@string/calculateName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultCap"
+        tools:text="@string/calculateName" />
+
+    <EditText
+        android:id="@+id/resultCap"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/resistCapSpinner"
+        app:layout_constraintStart_toEndOf="@+id/resultCapText"
+        app:layout_constraintTop_toBottomOf="@+id/CapNumber"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/freqText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="580dp"
+        android:gravity="center_vertical"
+        android:text="@string/frequencyName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/frequencyName" />
+
+    <TextView
+        android:id="@+id/resultCapText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/resultName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capText"
+        tools:text="@string/resultName" />
+
+    <Spinner
+        android:id="@+id/freqCapSpinner"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/freqArray"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <TextView
+        android:id="@+id/capText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="@string/capacitorName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freqText"
+        tools:text="@string/capacitorName" />
+
+    <Spinner
+        android:id="@+id/resistCapSpinner"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/resistanceArray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capSpinner" />
+
+    <EditText
+        android:id="@+id/frequencyCapNumber"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/freqCapSpinner"
+        app:layout_constraintStart_toEndOf="@+id/freqText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/capSpinner"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/capacitorArray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freqCapSpinner" />
+
+    <EditText
+        android:id="@+id/CapNumber"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/capSpinner"
+        app:layout_constraintStart_toEndOf="@+id/capText"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyCapNumber"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

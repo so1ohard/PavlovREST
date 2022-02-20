@@ -12,14 +12,16 @@
     <string name="requiredNumberOfTurnsName">Требуемое количество витков (шт)</string>
     <string name="diameterWiresName">Диаметр провода (мм)</string>
     <string name="frequencyName">Частота</string>
+    <string name="capacitorName">Ёмкость</string>
     <string name="inductionName">Индуктивность</string>
     <string name="resistanceUnits">Единицы сопротивления</string>
     <string name="reactiveResistanceBtnText">Расчёт реактивного сопротивления катушки индуктивности</string>
+    <string name="reactiveResistanceCapBtnText">Расчёт реактивного сопротивления конденсатора</string>
     <string-array name="VoltsArray">
-    <item>120</item>
-    <item>210</item>
-    <item>220</item>
-    <item>230</item>
+        <item>120</item>
+        <item>210</item>
+        <item>220</item>
+        <item>230</item>
     </string-array>
     <string-array name="freqArray">
         <item>Гц</item>
@@ -35,6 +37,11 @@
         <item>Ом</item>
         <item>КОм</item>
         <item>МОм</item>
+    </string-array>
+    <string-array name="capacitorArray">
+        <item>мкФ</item>
+        <item>нФ</item>
+        <item>пФ</item>
     </string-array>
     <string name="title_activity_reactive_resistance_induction">
         ReactiveResistanceInductionActivity
